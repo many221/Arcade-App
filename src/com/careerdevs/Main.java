@@ -1,6 +1,6 @@
 package com.careerdevs;
 
-import com.careerdevs.components.Dice;
+import com.careerdevs.arcade_v2.components.Dice;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.careerdevs.components;
+package com.careerdevs.arcade_v2.components;
 
 import java.util.ArrayList;
 
