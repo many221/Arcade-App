@@ -1,7 +1,10 @@
 package com.careerdevs.arcade_v1.blackjack;
 
-import com.careerdevs.arcade_v1.blackjack.Actors.Deck;
+import com.careerdevs.arcade_v1.blackjack.Actors.Dealer;
+import com.careerdevs.arcade_v1.blackjack.Actors.Player;
 import com.careerdevs.arcade_v1.blackjack.Utilis.Console;
+import com.careerdevs.arcade_v1.blackjack.deck.Deck;
+import com.careerdevs.arcade_v1.blackjack.deck.StandardDeck;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +15,7 @@ public class Table {
     // TODO: try to implement multiple hands.
     private List<Hand> hands = new ArrayList<> (); // 1, 2, 3, 4, 5, 6
     // TODO: more comfortable -> try to accomplish without the players list.
-    private Hand dealer = new Hand(new Dealer());
+    private Hand dealer = new Hand(new Dealer ());
     private Deck deck;
     private int playerCount = 0; //6
     public static final int BUST_VALUE = 21;
@@ -36,7 +39,7 @@ public class Table {
     }
 
     public void playRound() {
-        deck = new StandardDeck();
+        deck = new StandardDeck ();
 //        deck = new RiggedDeck();
         deck.shuffle();
         getBets();

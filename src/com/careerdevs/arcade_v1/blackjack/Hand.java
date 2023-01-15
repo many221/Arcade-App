@@ -1,5 +1,7 @@
 package com.careerdevs.arcade_v1.blackjack;
 
+import com.careerdevs.arcade_v1.blackjack.deck.Card;
+
 import java.util.ArrayList;
 import java.util.List;
 
